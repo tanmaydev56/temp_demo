@@ -9,7 +9,7 @@ const Categories = () => {
 
 
     <Flex 
-    
+   
     gap="150px"
     flexDirection="column"
 
@@ -18,7 +18,28 @@ const Categories = () => {
         
         
        
-        <Flex  justifyContent="space-around">
+        <Flex  justifyContent="space-around"
+           flexDirection={{
+            base: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+
+
+        }}
+        gap={{
+            base: "150px",
+            md: "250px",
+            lg: "250px",
+            xl: "250px",
+
+        }}
+        p={{
+            base: "80px",
+            md: "80px",
+            lg: "80px",
+            xl: "80px",
+        }}>
         <motion.div
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
